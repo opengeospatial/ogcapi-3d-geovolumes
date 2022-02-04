@@ -1,0 +1,75 @@
+.Preface
+
+
+////
+*OGC Declaration*
+////
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
+
+////
+NOTE: Uncomment ISO section if necessary
+
+*ISO Declaration*
+
+ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.
+
+International Standards are drafted in accordance with the rules given in the ISO/IEC Directives, Part 2.
+
+The main task of technical committees is to prepare International Standards. Draft International Standards adopted by the technical committees are circulated to the member bodies for voting. Publication as an International Standard requires approval by at least 75 % of the member bodies casting a vote.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.
+////
+
+
+== Submitters
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+[%unnumbered]
+|===
+|*Name* |*Affiliation*
+| Jeff Harrison _(editor)_ |US Army Geospatial Center
+| Ignacio Correas _(editor)_ |Skymantics, LLC
+| Jerome Jacovella-St-Louis _(editor)_ |Ecere Corporation
+| Tom Boggess | Strategic Alliance Consulting Inc.
+| Volker Coors | Steinbeis
+| Ryan Gauthier | Army Geospatial Center
+| Anneley Hadland | Helyx
+| Michala Hill | Cognitics
+| Thomas Myers | Strategic Alliance Consulting Inc.
+| Amy Youmans | Army Geospatial Center (AGC)
+| Insert POC Here | Cesium
+|===
+
+[abstract]
+== Abstract
+
+This document provides an Application Programming Interface (API) and encoding that organizes access to a variety of 2D / 3D content according to a hierarchy of 3D geospatial volumes (GeoVolumes). The goal of this specification is to establish an API and encoding that allows applications to request a variety of 3D content from different providers in an interoperable and standardized way.
+
+image::images/001.gif[Shape1] The API described in this document is based on Open Geospatial Consortium (OGC) and OpenAPI principles. The API is consistent with OGC API - Common core building blocks and supports link-follow, bounding box and tile coordinate query methods of access to resources of interest.
+
+An OGC API - 3D GeoVolumes specification is needed because a variety of solutions and standards exist to access and transfer 3D geospatial content (e.g. 3D Tiles, I3S, glTF and others). The OGC API - 3D GeoVolumes specification addresses this challenge by providing a resource model and corresponding API to integrate various approaches to accessing and transferring 2D / 3D geospatial content into a single, open standards-based solution. By outlining an implementation approach for the parameters of the API, the 3D GeoVolumes specification simplifies application development across geospatial enterprises by providing a single interface for requesting and receiving a variety of 2D / 3D datasets and their distribution. As such, the goal of this OGC API specification is not to replace existing distribution methods and models for 3D content, but to enable interoperability between them.
+
+The content provided within this document is derived largely from work done during collaborative, hands-on engineering conducted by members of the OGC during late 2019 and early 2020. As additional methodologies mature, this OGC API will be updated to include those approaches.
+
+////
+[#common-paths,reftext='{table-caption} {counter:table-num}']
+.Overview of Resources
+[width="90%",cols="2,2,^1,4",options="header"]
+|====
+| Resource | Path | HTTP Method | Document Reference
+| Landing page | ``/`` | GET | <<landing-page,API Landing Page>>
+| API definition | ``/api`` | GET | <<api-definition,API Definition>>
+| Conformance classes | ``/conformance`` | GET |<<conformance-classes,Declaration of Conformance Classes>>
+| Collections metadata | ``/collections`` | GET | <<rc_collection-section,Collections Metadata>>
+| Collection instance metadata | ``/collections/{collection_id}`` | GET | <<collection-definition,Collection Metadata>>
+|====
+////
+
+
+The resources identified in  <<common-paths>> primarily support Discovery operations. Discovery operations allow clients to interrogate the API to determine its capabilities and obtain information (metadata) about a distribution of a resource. This includes the API definition of the server(s) as well as metadata about the resources provided by those servers.
+
+This standard extends the <<common-paths>> common query operations by defining simple, coordinate-based, queries which are applicable to many spatio-temporal, including geospatial, resource types. Other OGC API standards may define additional query capabilities specific to their resource type. EDR Query operations allow resources or values to be retrieved from the underlying spatio-temporal resource data store. The information returned is based upon the selection criteria (query string) provided by the client.

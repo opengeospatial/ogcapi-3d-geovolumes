@@ -1,0 +1,38 @@
+[appendix]
+[[appendix_a]]
+[[ATS]]
+== Abstract Test Suite (Normative)
+
+=== Introduction
+
+The Abstract Test Suite (ATS) is a compendium of test assertions applicable to
+implementations of the EDR API. An ATS provides a basis for developing an Executable Test Suite to verify that the implementation under test conforms to all the relevant functional specifications.
+
+The abstract test cases (assertions) are organized into test groups that correspond to distinct conformance test classes defined in the EDR API specification.
+
+OGC APIs are not Web Services in the traditional sense. Rather, they define the behavior and content of a set of Resources exposed through a Web Application Programing Interface (Web API). Therefore, an API may expose resources in addition to those defined by the standard. A test engine must be able to traverse the API, identify and validate test points, and ignore resource paths which are not to be tested.
+
+:!numbered:
+=== Conformance Class Core
+
+
+[width=100%]
+|===
+<a| A.1 Test Case 1
+.<| *Requirement(s):* /req/core/collections-op, /req/core/collections-success
+.<| *Test purpose:* Verify that the collections resources can be fetched.
+.<a| *Test Method:* +
+1. Issue an HTTP GET request to the path /collections with header Accept: application/json.2. Issue an HTTP GET request to the path /collections?f=json.3. Issue an HTTP GET request to the path `/collections?bbox=x1,y1,{z1},x2,y2,{z2}.4. Validate that the response has a status code 200.5. Validate the contents of the returned document against the schema in: /collections, item E.6. Verify that each container id #/collections/{i} (where {i} is the index of the style in the array) is unique.7. Verify that each collection has at least one link with rel=self.8. Verify that for each link with rel=self that the href value links to a resource at the path /collections/{3DContainerId} where {3DContainerId} is the id member of the 3d Container.9. If each collection has content greater than one, verify each content contains rel=original or rel=alternate
+
+|===
+
+
+[width=100%]
+|===
+.<a| A.2 Test Case 2
+.<| *Requirement(s):* /req/core/collections/{3DContainerId}-op, /req/core/collections/{3DContainerId}-Success
+.<| *Test purpose:* Verify that the 3D Container resources can be fetched.
+.<a| *Test Method:* +
+1. Issue an HTTP GET request to the path /collections/{3DContainerId} with header Accept: application/json.2. Issue an HTTP GET request to the path /collections/{3DContainerId}?f=json.3. Issue an HTTP GET request to the path `/collections/{3DContainerId}?bbox=x1,y1,{z1},x2,y2,{z2}.4. Validate that the response has a status code 200.5. Validate the contents of the returned document against the schema in: /collections/{3DContainerId}, item E.6. Verify that each container id #/collections/{i} (where {i} is the index of the style in the array) is unique.7. Verify that each collection has at least one link with rel=self.8. Verify that for each link with rel=self that the href value links to a resource at the path /collections/{3DContainerId}9. If each collection has content greater than one, verify each content contains rel=original or rel=alternate
+
+|===

@@ -1,0 +1,9 @@
+[appendix,obligation="informative"]
+[[appendix_e]]
+[[annex_e]]
+:numbered:
+== Annex E: Accessing 3D Content by Tile Coordinates (Informative)
+:!numbered:
+This informative annex proposes approaches for extending TileMatrixSets and TileSet metadata and using Implicit Tiling for indexing and accessing 3D content as tiles and using a web API is used.
+
+EXPAND

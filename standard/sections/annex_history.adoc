@@ -1,0 +1,11 @@
+[appendix,obligation="informative"]
+:numbered:
+== Revision History
+
+[cols="12,18,12,12,46",options="header"]
+.Revision History
+|===
+|Date |Release |Editor | Primary clauses modified |Description
+
+|2022-02-03 |0.0|G.Buehler | all | Conversion to metanorma asciidoc
+|===

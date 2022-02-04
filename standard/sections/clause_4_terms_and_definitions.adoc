@@ -1,0 +1,60 @@
+[[terms_and_definitions]]
+== Terms and definitions
+
+
+////
+//UNCOMMENT THIS IF YOU PLAN ON INCLUDING THE GLOSSARY.  THEN UNCOMMENT THE annex_glossary.adoc IN document.adoc
+The <<glossary,Glossary>> includes terms from other standards and specifications that, while not normative, are critical to accurately understand this specification.
+////
+
+[[bounding-volume]]
+=== bounding volume
+
+typically, a shape like a sphere, rectangular box, or convex hull that can simply be tested for intersection or overlap.
+
+[[dataset]]
+=== dataset
+
+collection of data. (source: ISO 19168-1:2020)
+
+
+[[distribution]]
+=== distribution
+
+specific representation of a dataset. (source: ISO 19168-1:2020)
+
+[[feature]]
+=== feature
+
+abstraction of real-world phenomena. (source: ISO 19101-1:2014)
+
+[[geovolume]]
+=== geovolume
+
+a hierarchy of geospatial bounding volumes.
+
+[[static-web-server]]
+=== static web server
+
+a computer with an HTTP server containing hosted files that are sent 'as-is' to an application.
+
+[[web-api]]
+=== Web API
+
+API using an architectural style that is founded on the technologies of the Web. [derived from the W3C Data on the Web Best Practices]
+
+== Acronyms
+
+The acronyms relevant to this document are specified in the following list.
+
+API:: API Application Programming Interface
+BBOX:: Bounding Box
+BVH:: Bounding Volume Hierarchy
+CDB:: Common Database
+COTS:: Commercial Off The Shelf
+CRS:: Coordinate Reference System
+glTF:: GL Transmission Format
+HTTP:: Hypertext TransferProtocol
+JSON:: JavaScript Object Notations
+OGC:: Open GeospatialConsortium
+SWG:: Standards Working Group

@@ -1,0 +1,113 @@
+[appendix,obligation="informative"]
+[[appendix_d]]
+[[annex_d]]
+:numbered:
+== Annex D: Example Responses (Informative)
+:!numbered:
+This section provides examples of how servers may respond to requests issued by using the GeoVolumes API.
+
+Example 1: The server responds with only one GeoVolume from the container ID ("NewYork/NewYork-buildings"). The container can contain multiple 3D Containers, with multiple formats, and with a flat or hierarchical organization.
+
+[source%unnumbered,json]
+----
+{
+"id": "NewYork/NewYork-buildings",
+"title": "NYC - 3D Buildings Manhattan",
+"description": "3D Buildings in Manhattan, New York.",
+"collectionType": "3d-container",
+"extent": {
+  "spatial": [
+    -74.01900887327089,
+    40.700475291581974,
+    -11.892070104139751,
+    -73.9068954348699,
+    40.880256294183646,
+    547.7591871983744
+  ],
+  "crs": " http://www.opengis.net/def/crs/OGC/0/CRS84h[http://www.opengis.net/def/crs/OGC/0/CRS84h]"
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": " http://example.org/collections/NewYork/NewYork-buildings/[http://example.org/collections/NewYork/NewYork-buildings/]",
+      "type": "application/json",
+      "title": "NYC - 3D Buildings Manhattan"
+    },
+    {
+      "rel": "items",
+      "href": "http://example.org/collections/NewYork/NewYork-buildings/i3s/",
+      "type": "application/json+i3s",
+      "title": "NYC - 3D Buildings Manhattan: i3s"
+    },
+    {
+      "rel": "items",
+      "href": "http://example.org/collections/NewYork/NewYorkbuildings/3dTiles/",
+      "type": "application/json+3dtiles",
+      "title": "NYC - 3D Buildings Manhattan: 3D Tiles"
+    }
+  ],
+  "content": [
+    {
+      "title": "NYC - 3D Buildings Manhattan: i3s",
+      "rel": "original",
+      "href": "http://example.org/collections/NewYork/NewYork-buildings/i3s/",
+      "type": "application/json+i3s",
+      "collectionType": "3d-container"
+    },
+    {
+      "title": "NYC - 3D Buildings Manhattan: 3D Tiles",
+      "rel": "original",
+      "href": " http://example.org/NewYork/NewYork-buildings/3dTiles/[http://example.org/NewYork/NewYork-buildings/3dTiles/]",
+      "type": "application/json+3dtiles",
+      "collectionType": "3d-container"
+    }
+  ]
+}
+----
+
+Example 2: The client parses the 3D Container for 3D Tiles link. Client 3D Tiles/tileset. Response. The server response with tileset.json.
+
+[source%unnumbered,json]
+----
+{
+  "asset": {
+    "version": "1.0",
+    "extras": {
+      "ion": {
+        "georeferenced": true,
+        "movable": false
+      }
+    }
+  },
+  "properties": {
+    "Height": {
+      "maximum": 547.7591871983744,
+      "minimum": -11.892070104139751
+    },
+    "Latitude": {
+      "maximum": 40.880256294183646,
+      "minimum": 40.700475291581974
+    },
+    "Longitude": {
+      "maximum": -73.9068954348699,
+      "minimum": -74.01900887327089
+    }
+  },
+  "geometricError": 740.0197559011849,
+  "root": {
+    "boundingVolume": {
+      "region": [
+        -1.29187544264487,
+        0.7103573144863446,
+        -1.289919109210917,
+        0.7134950819190251,
+        0,
+        547.6909683533274
+      ]
+    },
+    "geometricError": 740.0197559011849,
+    "refine": "ADD",
+    "children": []
+  }
+}
+----

@@ -1,0 +1,38 @@
+[bibliography]
+== References
+
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+
+
+* [[[openapi,openapi]]] Open API Initiative: OpenAPI Specification 3.0.3, https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md[https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md]
+* [[[ieft_rfc2616,rfc2616]]] Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., Berners-Lee, T.: IETF RFC 2616, HTTP/1.1, https://tools.ietf.org/rfc/rfc2616.txt[https://tools.ietf.org/rfc/rfc2616.txt]
+////
+* [[[rfc2818,rfc2818]]] Rescorla, E.: IETF RFC 2818, HTTP Over TLS, https://tools.ietf.org/rfc/rfc2818.txt[https://tools.ietf.org/rfc/rfc2818.txt]
+* [[[rfc3339,rfc3339]]] Klyne, G., Newman, C.: IETF RFC 3339, Date and Time on the Internet: Timestamps, https://tools.ietf.org/rfc/rfc3339.txt[https://tools.ietf.org/rfc/rfc3339.txt]
+* [[[rfc3896,rfc3896]]] Berners-Lee, T., Fielding, R., Masinter, L: IETF RFC 3896, Uniform Resource Identifier (URI): Generic Syntax, https://tools.ietf.org/rfc/rfc3896.txt[https://tools.ietf.org/rfc/rfc3896.txt]
+* [[[rfc7946,rfc7946]]] Butler, H., Daly, M., Doyle, A., Gillies, S., Hagen, S., Schaub, T.: IETF RFC 7946, The GeoJSON Format, https://tools.ietf.org/rfc/rfc7946.txt[https://tools.ietf.org/rfc/rfc7946.txt]
+* [[[rfc8288,rfc8288]]] Nottingham, M.: IETF RFC 8288, Web Linking, https://tools.ietf.org/rfc/rfc8288.txt[https://tools.ietf.org/rfc/rfc8288.txt]
+* [[[rfc6570,rfc6570]]] Gregorio, J., Fielding, R., Hadley, M., Nottingham, M., Orchard, D.: IETF RFC 6570, URI Template, https://datatracker.ietf.org/doc/html/rfc6570[https://datatracker.ietf.org/doc/html/rfc6570]
+* [[[html5,html5]]] W3C: HTML5, W3C Recommendation, https://www.w3.org/TR/html5/[https://www.w3.org/TR/html5/]
+* [[[schema_org,schema_org]]]Schema.org: https://schema.org/docs/schemas.html[https://schema.org/docs/schemas.html]
+* [[[covjson,covjson]]] Blower, J., Riechert, M., Roberts, B.: Overview of the CoverageJSON format, https://www.w3.org/TR/covjson-overview/[https://www.w3.org/TR/covjson-overview/]
+* [[[rfc2413,rfc2413]]] Weibel, S., Kunze, J., Lagoze, C., Wolf, M.: IETF RFC 2413, Dublin Core Metadata for Resource Discovery, https://tools.ietf.org/rfc/rfc2413.txt[https://tools.ietf.org/rfc/rfc2413.txt]
+* [[[OGC06-103r4,OGC 06-103r4]]] Herring, J.: Simple Feature Access - Part 1: Common Architecture, http://portal.opengeospatial.org/files/?artifact_id=25355[http://portal.opengeospatial.org/files/?artifact_id=25355]
+* [[[OGC18-010r7,OGC 18-010r7]]] Lott, R.: Well-Known Text representation of Coordinate Reference Systems, http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[http://docs.opengeospatial.org/is/18-010r7/18-010r7.html]
+* [[[OGC17-069r3,OGC 17-069r3]]] Portele, C., Vretanos, P., Heazel, C.: OGC API - Features - Part 1: Core, http://www.opengis.net/doc/IS/ogcapi-features-1/1.0[http://www.opengis.net/doc/IS/ogcapi-features-1/1.0]
+////
+* [[[OGC19-072,OGC 19-072]]] Heazel, C.: OGC API - Common - Part 1: Core (Draft). OGC 19-072, Open Geospatial Consortium, http://docs.ogc.org/DRAFTS/19-072.html[http://docs.ogc.org/DRAFTS/19-072.html]
+* [[[OGC20-024,OGC 20-024]]] Heazel, C.: OGC API - Common - Part 2: Geospatial Data (Draft). OGC 20-024, Open Geospatial Consortium, http://docs.ogc.org/DRAFTS/20-024.html[http://docs.ogc.org/DRAFTS/20-024.html]
+* [[[OGC_15-001r4,OGC 15-001r4]]] _OGC 3D Portrayal Service_ https://docs.opengeospatial.org/is/15-001r4/15-001r4.html[_https://docs.opengeospatial.org/is/15-001r4/15-001r4.html_]
+* [[[OGC_17-014r7,OGC 17-014r7]]]  _OGC Indexed 3D Scene Layer (I3S) and Scene Layer Package Format Specification_ https://www.ogc.org/standards/i3s[_https://www.ogc.org/standards/i3s_]
+* [[[OGC_17-046,OGC 17-046]]]  _OGC Testbed 13: 3D Tiles and I3S Interoperability and Performance Engineering Report_ http://www.opengis.net/doc/PER/t13-NG002[_http://www.opengis.net/doc/PER/t13-NG002_]
+* [[[OGC_17-069r3,OGC 17-069r3]]]  _OGC® API – Features – Part 1: Core_ http://www.opengis.net/doc/IS/ogcapi-features-1/1.0[_http://www.opengis.net/doc/IS/ogcapi-features-1/1.0_]
+* [[[OGC_18-053r2,OGC 18-053r2]]]  _3D Tiles S__pecification_ _1.0_ https://www.ogc.org/standards/3DTiles[_https://www.ogc.org/standards/3DTiles_]
+* [[[OGC_19-010r2,OGC 19-010r2]]]  _OGC Testbed-15: Styles API Engineering Report_ http://www.opengis.net/doc/PER/t15-D012[_http://www.opengis.net/doc/PER/t15-D012_]
+* [[[OGC_19-041r3,OGC 19-041r3]]]  _OGC Routing Pilot Engineering Report_ http://www.opengis.net/doc/PER/routing-pilot-er[_http://www.opengis.net/doc/PER/routing-pilot-er_]
+* [[[OGC_,19-069OGC 19-069]]]  _OGC Testbed-15: Maps and Tiles API Engineering Report_ http://www.opengis.net/doc/PER/t15-D014[_http://www.opengis.net/doc/PER/t15-D014_]
+* [[[OGC_20-029,OGC 20-029]]]  _3D Data Container Engineering Report._ http://www.opengis.net/doc/PER/20-029[_http://www.opengis.net/doc/PER/20-029_]
+* [[[OGC_20-030,OGC 20-030]]]  _OGC® API – Tiles-3D (GeoVolumes) Engineering Report._ http://www.opengis.net/doc/PER/20-030[_http://www.opengis.net/doc/PER/20-030_]
+* [[[OGC_20-031,OGC 20-031]]]  _3D Data Container and Tiles API Pilot Summary Engineering Report_ https://www.opengis.net/doc/PER/20-031[_https://www.opengis.net/doc/PER/20-031_]
+* [[[OGC_17-083r3,OGC 17-083r3]]]  _OGC® Two Dimensional Tile Matrix Set and Tile Set Metadata Standard_ http://www.ogc.org/standards/requests/240.html[_http://www.ogc.org/standards/requests/240.html_]
+* [[[3D_Tiles_Next,3D Tiles Next]]] https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling/[_https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling/_]
