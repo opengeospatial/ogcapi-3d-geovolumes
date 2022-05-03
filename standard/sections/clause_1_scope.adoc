@@ -19,7 +19,7 @@ This OGC API is not intended to replace existing distribution methods and models
 A high-level representation of a geospatial enterprise implementing 3D GeoVolumes based on the needs of various types of entities and/or systems ('A'), ('B'), and ('C') is illustrated in the figure below. The demonstration scenario involves siting a field hospital in Central Park, New York City during a global pandemic.
 
 .The GeoVolumes API allows access to a variety of 3D content from different providers in a standardized way
-image::003.png[]
+images::003.png[]
 
 The three systems differ in the 3D content standards implemented, volume of data that can be stored and processed, supported analytics and available bandwidth for data transport between entities, with 'A' having the highest bandwidth and 'C' having the lowest bandwidth.
 
