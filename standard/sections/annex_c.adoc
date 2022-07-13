@@ -114,9 +114,11 @@ a| List of [double] +
 |===
 
 
-[width=100%]
+[cols="1,1",width=100%]
 |===
-| image::011.jpg["Bounding box",208,208]  | Bounding Box YAML:
+a| image::../images/011.jpg["Bounding box",208,208]
+a| Bounding Box YAML:
+
 [source%unnumbered,yaml]
 ----
 box:
@@ -127,7 +129,9 @@ box:
   minItems: 12
   maxItems: 12
 ----
-| image::012.jpg["Bounding Region",208,208]  | Bounding Region YAML:
+a| image::../images/012.jpg["Bounding Region",208,208]
+a| Bounding Region YAML:
+
 [source%unnumbered,yaml]
 ----
 box:
@@ -138,7 +142,9 @@ box:
   minItems: 6
   maxItems: 6
 ----
-| image::013.jpg["Bounding Sphere",208,208]  | Bounding Sphere YAML:
+a| image::../images/013.jpg["Bounding Sphere",208,208]
+a| Bounding Sphere YAML:
+
 [source%unnumbered,yaml]
 ----
 box:
@@ -155,9 +161,6 @@ box:
 === Coordinate Reference System (CRS)
 
 This is the CRS of the coordinates in the spatial extent (property 'bbox'). The default reference system is EPSG:4979 / WGS 84 longitude/latitude/height [http://www.opengis.net/def/crs/OGC/0/CRS84h[http://www.opengis.net/def/crs/OGC/0/CRS84h]]. In the Core this is the only supported CRS. Extensions may support additional coordinate reference systems and add additional enum values.
-
-+
- +
 
 === Extent
 

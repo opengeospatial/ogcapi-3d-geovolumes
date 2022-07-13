@@ -1,0 +1,56 @@
+[[ats_core_3dcontainer]]
+[abstract_test]
+====
+[%metadata]
+label:: /conf/core/3dcontainer
+subject:: <<req_core_collections_3DContainerId-op,/req/core/collections/{3DContainerId}-op>>,<<req_core_collections-success,/req/core/collections/{3DContainerId}-Success>>
+test-purpose:: Verify that the 3D Container resources can be fetched.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Issue an HTTP GET request to the path /collections/{3DContainerId} with header Accept: application/json.
+--
+
+[.component,class=step]
+--
+Issue an HTTP GET request to the path /collections/{3DContainerId}?f=json.
+--
+
+[.component,class=step]
+--
+Issue an HTTP GET request to the path `/collections/{3DContainerId}?bbox=x1,y1,{z1},x2,y2,{z2}.
+--
+
+[.component,class=step]
+--
+Validate that the response has a status code 200.
+--
+
+[.component,class=step]
+--
+Validate the contents of the returned document against the schema in: /collections/{3DContainerId}, item E.
+--
+
+[.component,class=step]
+--
+Verify that each container id #/collections/{i} (where {i} is the index of the style in the array) is unique.
+--
+
+[.component,class=step]
+--
+Verify that each collection has at least one link with rel=self.
+--
+
+[.component,class=step]
+--
+Verify that for each link with rel=self that the href value links to a resource at the path /collections/{3DContainerId}
+--
+
+[.component,class=step]
+--
+If each collection has content greater than one, verify each content contains rel=original or rel=alternate
+--
+=====
+====

@@ -4,7 +4,7 @@ The OGC 3D GeoVolumes specification provides an Application Programming Interfac
 
 The goal of this OGC API is to allow applications to request a variety of 3D content from different providers in an interoperable and standardized way.
 
-image::images/002.gif[Shape2] OGC API - 3D GeoVolumes specification is based on Open Geospatial Consortium (OGC) and OpenAPI principles. The API is consistent with OGC API – Common – Part 1: Core building blocks and supports link-follow, bounding box query, and tile coordinate methods of access to resources of interest.
+OGC API - 3D GeoVolumes specification is based on Open Geospatial Consortium (OGC) and OpenAPI principles. The API is consistent with OGC API – Common – Part 1: Core building blocks and supports link-follow, bounding box query, and tile coordinate methods of access to resources of interest.
 
 The objective of the 3D GeoVolumes API and resource model is not to replace existing distribution methods and models for 3D content such as OGC 3D Tiles and I3S, but to enable interoperability between them.
 
@@ -19,7 +19,7 @@ This OGC API is not intended to replace existing distribution methods and models
 A high-level representation of a geospatial enterprise implementing 3D GeoVolumes based on the needs of various types of entities and/or systems ('A'), ('B'), and ('C') is illustrated in the figure below. The demonstration scenario involves siting a field hospital in Central Park, New York City during a global pandemic.
 
 .The GeoVolumes API allows access to a variety of 3D content from different providers in a standardized way
-images::003.png[]
+image::../images/003.png[width=800]
 
 The three systems differ in the 3D content standards implemented, volume of data that can be stored and processed, supported analytics and available bandwidth for data transport between entities, with 'A' having the highest bandwidth and 'C' having the lowest bandwidth.
 
@@ -34,30 +34,30 @@ The high-level architecture defines a third enterprise entity, low bandwidth cap
 The previous section provided a high-level representation of a geospatial enterprise implementation of the 3D GeoVolumes API based on the needs of various types of entities and/or systems. The technology described in this API supports this scenario efficiently because 3D GeoVolumes follow a common conceptual organization of space applied by humans, which is a collection of spaces where the spaces contain either sub-spaces or a set of objects. This representation of space is called the Bounding Volume, which is a closed volume containing the union of a set of geometric objects. The figure below illustrates typical Bounding Volumes (Box, Region, Sphere) with enclosed cuboid objects.
 
 .Bounding Volumes (Box, Region, Sphere) with enclosed cuboid objects
-image::004.png[]
+image::../images/004.png[width=800]
 
 The space organized in this manner may describe a collection of disjoint GeoVolumes, hierarchical collections of GeoVolumes or GeoVolumes accessed by tile coordinates organized in an OGC tiling scheme. The concepts of disjoint and hierarchical collections of GeoVolumes are illustrated in the figure below where the GeoVolume "North America" contains two child GeoVolumes "Montreal" and "New York City". &nbsp;Both are spatially disjoint. The GeoVolume "New York City" contains a single 3D Dataset representing buildings. These buildings are available in multiple distribution formats (3D Tiles, I3S and CityGML).
 
 .GeoVolumes in nested hierarchy with a 3D dataset and multiple distributions
-image::005.png[]
+image::../images/005.png[]
 
 In these constructs, each GeoVolume may have one or more children whose extents may themselves overlap but in aggregate are completely contained in the parent volume extent. Each GeoVolume can contain references to and descriptions of the extent of dataset(s) of its contents and may provide links to multiple distributions of that dataset in different formats or encodings, e.g. 3D Tiles, I3S. GeoVolumes in this model may be accessed as /collections by an API. This API standard does not identify mandatory requirements for how specific distribution formats or encodings are composed and organized into spatial data structures (e.g. tiling schemes).
 
 .GeoVolumes can reference extent of datasets and link to 'child' GeoVolumes
-image::006.png[]
+image::../images/006.png[]
 
 A GeoVolumes&nbsp;API may optionally&nbsp;access 3D&nbsp;geospatial content&nbsp;as tiles&nbsp;through extensions for tile coordinates. This may be achieved by using an&nbsp;extraDimensions&nbsp;property consisting of a list of identified objects, each with a description on how the additional dimensions are tiled. It may also be achieved by using Implicit Tiling as outlined in the emerging Community Standard for "3D Tiles Next". The two approaches will be harmonized in the GeoVolumes SWG and this specification updated.
 
 If an extraDimensions property consisting of a list of identified objects is used this information can be added to either a&nbsp;TileMatrixSet's&nbsp;TileMatrix&nbsp;or to a&nbsp;TileSet's TileMatrixSetLimit. Including this property in the&nbsp;TileSet'sTileMatrixSetLimits&nbsp;allows for the re-use of common 2D&nbsp;TileMatrixSets&nbsp;for 3D geospatial content.
 
 .GeoVolumes&nbsp;may optionally&nbsp;access 3D&nbsp;geospatial content&nbsp;via tile coordinates
-image::007.gif[]
+image::../images/007.gif[]
 
 The default representations of a GeoVolume are json/html information documents that define the bounding box/volume, link to an implicit tileset scheme if applicable, and provide links to the actual content. GeoVolumes are organized in collections as described above.
 
 The basic architecture of server components to access 3D GeoVolume encodings is shown in the figure below. Each 3D / Globe client component can access 3D datasets in multiple distribution formats by means of components implementing the GeoVolumes API as an access interface. The API enables access to these resources using the HTTP protocol and its associated methods.
 
 .Basic architecture of server components to access 3D GeoVolumes
-image::008.png[]
+image::../images/008.png[]
 
 Clients then visualize the returned content in the context of a 3D globe rendering either built into the client or assembled onto 2D tiles fetched separately from the GeoVolumes API, using for example, a 2D Tile Server. In the future, 2D tiles could also be accessed through the GeoVolumes API.

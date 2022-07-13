@@ -1,0 +1,46 @@
+<bibdata type="standard">
+  <fetched>2022-05-29</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package Format Specification</title>
+  <title type="main" format="text/plain" language="en" script="Latn">OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package Format Specification</title>
+  <uri type="obp">https://docs.opengeospatial.org/cs/17-014r7/17-014r7.html</uri>
+  <docidentifier type="OGC" primary="true">17-014r7</docidentifier>
+  <date type="published">
+    <on>2020-02-08</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Carl Reed</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Tamrat Belayneh</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>7</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">A single I3S data set, referred to as a Scene Layer, is a container for arbitrarily large amounts of heterogeneously distributed 3D geographic data.Scene Layers are designed to be used in mobile, desktop, and server-based workflows and can be accessed over the web or as local files.
+
+The delivery format and persistence model for Scene Layers, referred to as Indexed 3d Scene Layer (I3S) and Scene Layer Package (SLPK) respectively, are specified in detail in this OGC Community Standard. Both formats are encoded using JSON and binary ArrayBuffers (ECMAScript 2015). I3S is designed to be cloud, web and mobile friendly. I3S is based on JSON, REST and modern web standards and is easy to handle, efficiently parse and render by Web and Mobile Clients. I3S is designed to stream large 3D datasets and is designed for performance and scalability. I3S is designed to support 3D geospatial content and supports the requisite coordinate reference systems and height models in conjunction with a rich set of layer types.
+
+The open community GitHub version of this standard is here: https://github.com/Esri/i3s-spec [2].</abstract>
+  <ext>
+    <doctype>community-standard</doctype>
+    <editorialgroup>
+      <committee>technical</committee>
+    </editorialgroup>
+  </ext>
+</bibdata>

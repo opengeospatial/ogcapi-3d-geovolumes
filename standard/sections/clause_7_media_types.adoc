@@ -9,18 +9,57 @@ The media types in the following sections are informative to the 3D GeoVolumes A
 
 === application/json+i3s
 
-[width=100%]
-|===
-.<h| *Type name: application**Subtype name: json+i3s*
-.<| Required parameters: n/aOptional parameters: n/aEncoding considerations: See RFC 8259, The JavaScript Object Notation (JSON) DataInterchange FormatSecurity considerations: See Section 12 of RFC 8259Interoperability considerations: n/aPublished specification: link: n/aApplications that use this media type: n/aAdditional information:Deprecated alias names for this type: n/aMagic number(s): n/aFile extension(s): .jsonMacintosh file type code(s): n/aPerson to contact for further information: n/aIntended usage: COMMONRestrictions on usage: noneAuthor: n/aChange controller: n/a
+*Type name: application*
 
-|===
+*Subtype name: json+i3s*
+
+```
+Required parameters: n/a
+Optional parameters: n/a
+Encoding considerations: See RFC 8259, The JavaScript Object Notation (JSON) Data
+Interchange Format
+Security considerations: See Section 12 of RFC 8259
+Interoperability considerations: n/a
+Published specification:
+link: n/a
+Applications that use this media type: n/a
+Additional information:
+  Deprecated alias names for this type: n/a
+  Magic number(s): n/a
+  File extension(s): .json
+  Macintosh file type code(s): n/a
+Person to contact for further information: n/a
+Intended usage: COMMON
+Restrictions on usage: none
+Author: n/a
+Change controller: n/a
+
+```
 
 === application/json+3dtiles
 
-[width=100%]
-|===
-.<h| *Type name: application**Subtype name: json+3dtiles*
-.<| Required parameters: n/aOptional parameters: n/aEncoding considerations: See RFC 8259, The JavaScript Object Notation (JSON) Data Interchange FormatSecurity considerations: See Section 12 of RFC 8259Interoperability considerations: n/aPublished specification: n/alink: n/aApplications that use this media type:Additional information:Deprecated alias names for this type: n/aMagic number(s): n/aFile extension(s): .jsonMacintosh file type code(s): n/aPerson to contact for further information: n/aIntended usage: COMMONRestrictions on usage: noneAuthor: n/aChange controller: n/a
+*Type name: application*
 
-|===
+*Subtype name: json+3dtiles*
+
+```
+Required parameters: n/a
+Optional parameters: n/a
+Encoding considerations: See RFC 8259, The JavaScript Object Notation (JSON) Data Interchange Format
+Security considerations: See Section 12 of RFC 8259
+Interoperability considerations: n/a
+Published specification: n/a
+link: n/a
+Applications that use this media type:
+Additional information:
+  Deprecated alias names for this type: n/a
+  Magic number(s): n/a
+  File extension(s): .json
+  Macintosh file type code(s): n/a
+Person to contact for further information: n/a
+Intended usage: COMMON
+Restrictions on usage: none
+Author: n/a
+Change controller: n/a
+
+```
