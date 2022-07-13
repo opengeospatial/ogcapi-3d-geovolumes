@@ -181,7 +181,7 @@
 <p id="_292cd024-64cc-9385-5409-5a5bc337b1b6">The resources identified in  <xref target="common-paths">[common-paths]</xref> primarily support Discovery operations. Discovery operations allow clients to interrogate the API to determine its capabilities and obtain information (metadata) about a distribution of a resource. This includes the API definition of the server(s) as well as metadata about the resources provided by those servers.</p>
 
 <p id="_c4396e86-5110-0d1c-aba5-df15d02e8a5e">This standard extends the <xref target="common-paths">[common-paths]</xref> common query operations by defining simple, coordinate-based, queries which are applicable to many spatio-temporal, including geospatial, resource types. Other OGC API standards may define additional query capabilities specific to their resource type. EDR Query operations allow resources or values to be retrieved from the underlying spatio-temporal resource data store. The information returned is based upon the selection criteria (query string) provided by the client.</p>
-</abstract><clause id="_8fea8fc7-7b2b-44d2-80fb-5bc2459ce3d1" type="keywords" displayorder="2">
+</abstract><clause id="_2f51cbb4-9e33-4ee1-b262-798f2db37f59" type="keywords" displayorder="2">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -191,7 +191,7 @@
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_51ee54ae-4436-43d0-a382-01434da08fa2" type="submitting_orgs" displayorder="5">
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_c4b63cff-7d6f-4078-a19a-300df1e2ad4f" type="submitting_orgs" displayorder="5">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
