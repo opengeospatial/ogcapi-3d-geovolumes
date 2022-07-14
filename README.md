@@ -38,9 +38,9 @@ against different versions of the evolving draft:
 
 The contributor understands that any contributions, if accepted by the OGC Membership, shall be incorporated into OGC API - 3D GeoVolumes standards documents and that all copyright and intellectual property shall be vested to the OGC.
 
-The OGC's OGC API - 3D GeoVolumes Standards Working Group (SWG) is the group at OGC responsible for the stewardship of the standard, but is working to do as much work in public as possible.
+The OGC's 3D GeoVolumes Standards Working Group (SWG) is the group at OGC responsible for the stewardship of the standard, but is working to do as much work in public as possible.
 
-* [OGC API - 3D GeoVolumes Standards Working Group Charter](https://www.ogc.org/projects/groups/movfeatswg)
+* [3D GeoVolumes Standards Working Group Charter](https://www.ogc.org/projects/groups/3dgeovolswg)
 * [Open issues](https://github.com/opengeospatial/ogcapi-3d-geovolumes/issues)
 * [Copy of License Language](https://github.com/opengeospatial/ogcapi-3d-geovolumes/blob/master/LICENSE)
 
