@@ -29,6 +29,14 @@ The columns for each part list the conformance classes of the standard that are 
 | `core`
 | https://github.com/JoeThunyathep[@JoeThunyathep]
 
+| https://maps.ecere.com/ogcapi/collections/SanDiegoCDB[GNOSIS Map Server - SanDiego]
+| `core` (3D Tiles), `nD-tiles / 3D Models / Textures`
+| https://github.com/jerstlouis[@jerstlouis]
+
+| https://maps.ecere.com/3DAPI[Static Server (Apache) - NYC]
+| `core` (3D Tiles)
+| https://github.com/jerstlouis[@jerstlouis]
+
 |===
 
 ## Clients
@@ -41,6 +49,10 @@ The columns for each part list the conformance classes of the standard that the 
 [cols="5,3,2",options="header",grid="rows",stripes="hover"]
 |===
 | Product | Part 1 | Contact email
+
+| GNOSIS SDK / Cartographer
+| `core` (3D Tiles), `nD-tiles / 3D Models / Textures`
+|  https://github.com/jerstlouis[@jerstlouis]
 
 | TBA
 | `core`
