@@ -50,7 +50,7 @@ The columns for each part list the conformance classes of the standard that the 
 |===
 | Product | Part 1 | Contact email
 
-| GNOSIS SDK / Cartographer
+| https://ecere.ca/gnosis/[GNOSIS SDK / Cartographer]
 | `core` (3D Tiles), `nD-tiles / 3D Models / Textures`
 |  https://github.com/jerstlouis[@jerstlouis]
 
