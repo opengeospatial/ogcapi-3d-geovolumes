@@ -6,7 +6,7 @@ The [OGC API - 3D GeoVolumes](https://ogcapi.ogc.org/geovolumes/) candidate stan
 [OGC API standards](https://ogcapi.ogc.org) define modular API building blocks to spatially enable Web APIs in a consistent way.
 [OpenAPI](http://openapis.org) is used to define the reusable API building blocks.
 
-## Overview of OGC API - 3D GeoVolumes - Part 1: Core
+## Overview of OGC API - 3D GeoVolumes
 
 ```
 GET /collections
@@ -21,7 +21,7 @@ GET /collections/{3d-containerID}
 Retrieve the 3d-container for the specified id.
 
 ## Using the standard
-A draft of the **OGC API - 3D GeoVolumes - Part 1: Core extension** standard is available:
+A draft of the **OGC API - 3D GeoVolumes** standard is available:
 
 * [HTML version](https://opengeospatial.github.io/ogcna-auto-review/22-029.html)
 
