@@ -8,7 +8,7 @@ In addition to these basic requirements, the following requirements/conformance 
 * *Extension: Adds the option for a spatial query parameter or tile coordinate to limit the result set.*
 
 
-The 3D GeoVolumes API is designed to be a specialized API based on the OGC API principles that can significantly reduce the burden of implementing new clients and APIs as the specification only requires a minimal set of content/parameters needed to transfer 3D data, features, and attributes through an API.&nbsp;
+The 3D GeoVolumes API is designed to be a specialized API based on the OGC API principles that can significantly reduce the burden of implementing new clients and APIs as the specification only requires a minimal set of content/parameters needed to transfer 3D data, features, and attributes through an API.
 
 This 3D GeoVolumes API follows the standards and conventions provided in the OGC API - Common for Web APIs. The 3D GeoVolumes API conforms to the OGC API - Common foundation resources: landing page, API definition, conformance, and collections (spatial resources).
 
@@ -65,8 +65,8 @@ part:: A successful execution of the operation SHALL be reported as a response w
 part:: The content of that response SHALL be based upon the schema https://raw.githubusercontent.com/opengeospatial/ogcapi-3d-geovolumes/main/standard/openapi/schemas/landingPage.yaml[landingPage.yaml] and include links to the following resources:
 
 * the API Definition (relation type 'service-desc' or 'service-doc')
-* the Conformance Declaration (relation type /conformance&nbsp;(relation type ' http://www.opengis.net/def/rel/ogc/1.0/conformance[http://www.opengis.net/def/rel/ogc/1.0/conformance] ')
-* /collections&nbsp;(relation type 'data')
+* the Conformance Declaration (relation type /conformance (relation type ' http://www.opengis.net/def/rel/ogc/1.0/conformance[http://www.opengis.net/def/rel/ogc/1.0/conformance] ')
+* /collections (relation type 'data')
 ====
 
 A sample schema for the landing page of the GeoVolumes API is provided below.
@@ -140,7 +140,7 @@ The Conformance Declaration states the conformance classes from standards or com
 ====
 [%metadata]
 label:: /req/core/conformance-op
-part:: The server SHALL support the HTTP GET operation on the URI &nbsp;/{root}/conformance.
+part:: The server SHALL support the HTTP GET operation on the URI  /{root}/conformance.
 part:: The server SHALL support the HTTP GET operation on all links from the landing page that have the relation type http://www.opengis.net/def/rel/ogc/1.0/conformance[http://www.opengis.net/def/rel/ogc/1.0/conformance].
 part:: The responses to all HTTP GET requests issued in A and B server SHALL satisfy requirement */req/core/conformance-success.*
 ====
@@ -203,24 +203,25 @@ part:: The URIs of all API definitions referenced from the landing page SHALL su
 ====
 
 
-[width=100%]
-|===
-h| *Permission 1* h| */req/core/api-definition-uri*
-| A | The API definition is metadata about the API and strictly not part of the API itself, but it MAY be hosted as a sub-resource to the base path of the API, for example, at path&nbsp;/api. There is no need to include the path of the API definition in the API definition itself.
-
-|===
+[permission]
+====
+[%metadata]
+label:: /per/core/api-definition-uri
+part:: The API definition is metadata about the API and strictly not part of the API itself, but it MAY be hosted as a sub-resource to the base path of the API, for example, at path /api. There is no need to include the path of the API definition in the API definition itself.
+====
 
 Note that multiple API definition formats can be supported.
 
 
 ===== Response
 
-[width=100%]
-|===
-h| *Recommendation 1* h| */rec/core/api-definition-oas*
-| A | A JSON representation of the API definition document SHOULD conform to the&nbsp;OpenAPI Specification 3.0, the document.
 
-|===
+[recommendation]
+====
+[%metadata]
+label:: /rec/core/api-definition-oas
+part:: A JSON representation of the API definition document SHOULD conform to the OpenAPI Specification 3.0, the document.
+====
 
 
 //Requirement 6
@@ -229,11 +230,11 @@ h| *Recommendation 1* h| */rec/core/api-definition-oas*
 ====
 [%metadata]
 label:: /req/core/api-definition-success
-part:: A GET request to the URI of an API definition linked from the landing page (link relations&nbsp;service-desc&nbsp;or&nbsp;service-doc) with an&nbsp;Accept&nbsp;header with the value of the link property&nbsp;type&nbsp;SHALL return a document consistent with the requested media type.
+part:: A GET request to the URI of an API definition linked from the landing page (link relations service-desc or service-doc) with an Accept header with the value of the link property type SHALL return a document consistent with the requested media type.
 ====
 
 
-If the server hosts the API definition under the base path of the API (for example, at path&nbsp;/api, see above), there is no need to include the path of the API definition in the API definition itself.
+If the server hosts the API definition under the base path of the API (for example, at path /api, see above), there is no need to include the path of the API definition in the API definition itself.
 
 The idea is that any 3D GeoVolumes API implementation can be used by developers that are familiar with the API definition language(s) supported by the server. The developer may need to learn about 3D data types, etc., but it should not be required to read this specification to access the data via the API.
 
@@ -285,7 +286,7 @@ Collections provides the information to access a collection of GeoVolumes (3D Co
 ====
 [%metadata]
 label:: /req/core/collections-op
-part:: The server SHALL support the HTTP GET operation at the path&nbsp;/collections.
+part:: The server SHALL support the HTTP GET operation at the path /collections.
 ====
 
 //Requirement 8
@@ -294,7 +295,7 @@ part:: The server SHALL support the HTTP GET operation at the path&nbsp;/collect
 ====
 [%metadata]
 label:: /req/core/collections-success
-part:: A successful execution of the operation SHALL be reported as a response with a HTTP status code&nbsp;200.
+part:: A successful execution of the operation SHALL be reported as a response with a HTTP status code 200.
 part:: The content of that response SHALL conform to the media type stated in the Content-Type header.
 part:: The content of that response SHALL conform to the media type stated in the query string.
 part:: The content of that response SHALL be constrained by the bbox stated in the query string.
@@ -353,7 +354,7 @@ part:: The server SHALL support the HTTP GET operation at the path /collections/
 ====
 [%metadata]
 label:: /req/core/collections/{3DContainerId}-success
-part:: A successful execution of the operation SHALL be reported as a response with a HTTP status code&nbsp;200.
+part:: A successful execution of the operation SHALL be reported as a response with a HTTP status code 200.
 part:: The content of that response SHALL conform to the media type stated in the Content-Type header.
 part:: The content of that response SHALL conform to the media type stated in the query string.
 part:: The content of that response SHALL be constrained by the bbox stated in the query string.

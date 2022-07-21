@@ -1,35 +1,32 @@
 == Conformance
 
-Conformance with this API shall be checked using the tests specified in&nbsp;Annex A of this document. The framework, concepts, and methodology for testing, and the criteria to claim conformance are specified in the&nbsp; https://portal.ogc.org/files/?artifact_id=55234[OGC Compliance Testing Policies and Procedures]&nbsp;and the&nbsp; https://www.ogc.org/compliance[OGC Compliance Testing]&nbsp;web site.
+Conformance with this API shall be checked using the tests specified in Annex A of this document. The framework, concepts, and methodology for testing, and the criteria to claim conformance are specified in the  https://portal.ogc.org/files/?artifact_id=55234[OGC Compliance Testing Policies and Procedures] and the  https://www.ogc.org/compliance[OGC Compliance Testing] web site.
 
-The one Standardization Target for this standard is&nbsp; https://docs.ogc.org/is/19-086r4/19-086r4.html#webapi-definition[Web APIs].
+The one Standardization Target for this standard is  https://docs.ogc.org/is/19-086r4/19-086r4.html#webapi-definition[Web APIs].
 
-https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core]&nbsp;defines an API module intended for re-use by other OGC Web API standards. The OGC API - 3D GeoVolumes is an extension of&nbsp; https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core]. Conformance to the OGC API - 3D GeoVolumes requires demonstrated conformance to the applicable Conformance Classes of OGC API - Common.
+https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core] defines an API module intended for re-use by other OGC Web API standards. The OGC API - 3D GeoVolumes is an extension of  https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core]. Conformance to the OGC API - 3D GeoVolumes requires demonstrated conformance to the applicable Conformance Classes of OGC API - Common.
 
-OGC API - 3D GeoVolumes identifies a set of Conformance Classes. The&nbsp; https://docs.ogc.org/is/19-086r4/19-086r4.html#ctc-definition[Conformance Classes]&nbsp;implemented by an API are advertised through the&nbsp;/conformance&nbsp;path on the landing page.
+OGC API - 3D GeoVolumes identifies a set of Conformance Classes. The  https://docs.ogc.org/is/19-086r4/19-086r4.html#ctc-definition[Conformance Classes] implemented by an API are advertised through the /conformance path on the landing page.
 
 
-Each Conformance Class is defined by one or more&nbsp; https://docs.ogc.org/is/19-086r4/19-086r4.html#requirements-class-definition[Requirements Classes] defined in Section 6. The requirements in Section 6&nbsp;are organized by Requirements Class.
+Each Conformance Class is defined by one or more  https://docs.ogc.org/is/19-086r4/19-086r4.html#requirements-class-definition[Requirements Classes] defined in Section 6. The requirements in Section 6 are organized by Requirements Class.
 
 
 === Mandatory Requirements Classes
 
 The mandatory requirements class of OGC API - 3D GeoVolumes is the Requirements Class "OGC API – 3D GeoVolumes – Core" specified in Section 6.
 
-This requirements class inherits from the&nbsp;_Core Requirements Class_&nbsp;of&nbsp; https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API — Common — Part 1: Core]&nbsp;which specifies the minimal useful service interface for an OGC API.
+This requirements class inherits from the _Core Requirements Class_ of  https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API — Common — Part 1: Core] which specifies the minimal useful service interface for an OGC API.
 
-----
-*The requirements specified in the&nbsp;Requirements Class "OGC API – 3D GeoVolumes – Core"&nbsp;focus on minimal capabilities for a static web server.*
-----
+The requirements specified in the Requirements Class "OGC API – 3D GeoVolumes – Core" focus on minimal capabilities for a static web server.
 
-The requirements specified in the&nbsp;Requirements Class "OGC API – 3D GeoVolumes – Core"&nbsp;are mandatory for all implementations of the 3D GeoVolumes API.
+
+The requirements specified in the Requirements Class "OGC API – 3D GeoVolumes – Core" are mandatory for all implementations of the 3D GeoVolumes API.
 
 === Optional Requirements Classes
 
 The optional requirements classes of OGC API - 3D GeoVolumes include Requirements Class "OGC API – 3D GeoVolumes – Extension" specified in Section 6.
 
-----
-*The requirements specified in the&nbsp;Requirements Class "OGC API – 3D GeoVolumes – Extension"&nbsp;adds the option for a spatial query parameter or tile coordinates to limit the result.*
-----
+The requirements specified in the Requirements Class "OGC API – 3D GeoVolumes – Extension" adds the option for a spatial query parameter or tile coordinates to limit the result.
 
-The requirements specified in the&nbsp;Requirements Class "OGC API – 3D GeoVolumes – Extension"&nbsp;are optional for implementations of the 3D GeoVolumes API.
+The requirements specified in the Requirements Class "OGC API – 3D GeoVolumes – Extension" are optional for implementations of the 3D GeoVolumes API.
