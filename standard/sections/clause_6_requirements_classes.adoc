@@ -42,6 +42,7 @@ inherit:: <<OGC19-072,OGC API – Common – Part 1: Core>>
 inherit:: <<rfc8259,JSON>>
 ====
 
+[[landing_page_clause]]
 ==== Landing page
 
 The entry point to the API (/). The landing page provides links to the service description, API definition (/api), conformance declaration (/conformance) and collections (/collections).
@@ -130,6 +131,7 @@ A sample landing page response document of an GeoVolumes API is provided below.
 
 See HTTP Status Codes in Appendix A - Web API<<appendix_a>> for general guidance.
 
+[[conformance_declaration_clause]]
 ==== Declaration of Conformance Classes
 
 The Conformance Declaration states the conformance classes from standards or community specifications, identified by a URI, to which the API conforms. The conformance resource requires no parameters. The HTTP /conformance GET response returns the list of URIs of conformance classes implemented by the server in JSON.
@@ -186,6 +188,7 @@ The following example of the conformance declaration of a 3D GeoVolumes API was 
 
 See HTTP Status Codes in Appendix A - Web API<<appendix_a>> for general guidance.
 
+[[api_definition_clause]]
 ==== API Definition
 
 
@@ -276,6 +279,7 @@ The following is an example of the API definition.
 
 See HTTP Status Codes in Appendix A - Web API<<appendix_a>> for general guidance.
 
+[[collections_clause]]
 ==== Collections
 
 Collections provides the information to access a collection of GeoVolumes (3D Containers). The collection resources accept the 2D or 3D bounding box (bbox) and format parameter. The resource accepts query or header parameters for the format parameter. The bounding box query parameter lower left: x, y, {z}, and upper right x, y, {z} (z-coordinate is optional) returns GeoVolumes that are within the area. The HTTP /collections GET response returns JSON containing two properties, links (link: URI, type, relationship) and 3D Container.
@@ -334,7 +338,7 @@ properties:
 
 ====
 
-
+[[collection_definition_clause]]
 ==== 3D-Container
 
 The collection resources support access to a 3D-Container with a unique identifier (/collections/{3DContainerId}). The format and bounding box parameters in the collections request can be applied to a specific GeoVolume request. The bbox query on a GeoVolume will apply filtering on the contents within the GeoVolume. The HTTP /collections/{3DContainerId} GET response returns JSON representing the 3D-Container (GeoVolume).

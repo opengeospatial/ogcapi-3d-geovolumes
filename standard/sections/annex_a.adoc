@@ -1,6 +1,5 @@
-[appendix]
 [[appendix_a]]
-[[ATS]]
+[appendix, obligation=normative]
 == Abstract Test Suite (Normative)
 
 === Introduction

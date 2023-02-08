@@ -55,21 +55,21 @@ An OGC API - 3D GeoVolumes specification is needed because a variety of solution
 
 The content provided within this document is derived largely from work done during collaborative, hands-on engineering conducted by members of the OGC during late 2019 and early 2020. As additional methodologies mature, this OGC API will be updated to include those approaches.
 
-////
+
 [#common-paths,reftext='{table-caption} {counter:table-num}']
 .Overview of Resources
 [width="90%",cols="2,2,^1,4",options="header"]
 |====
 | Resource | Path | HTTP Method | Document Reference
-| Landing page | ``/`` | GET | <<landing-page,API Landing Page>>
-| API definition | ``/api`` | GET | <<api-definition,API Definition>>
-| Conformance classes | ``/conformance`` | GET |<<conformance-classes,Declaration of Conformance Classes>>
-| Collections metadata | ``/collections`` | GET | <<rc_collection-section,Collections Metadata>>
-| Collection instance metadata | ``/collections/{collection_id}`` | GET | <<collection-definition,Collection Metadata>>
+| Landing page | ``/`` | GET | <<landing_page_clause,API Landing Page>>
+| API definition | ``/api`` | GET | <<api_definition_clause,API Definition>>
+| Conformance classes | ``/conformance`` | GET |<<conformance_declaration_clause,Declaration of Conformance Classes>>
+| Collections metadata | ``/collections`` | GET | <<collections_clause,Collections Metadata>>
+| Collection instance metadata | ``/collections/{collection_id}`` | GET | <<collection_definition_clause,Collection Metadata>>
 |====
-////
 
+NOTE: In the context of this candidate Standard, `{collection_id}` is the `{3DContainerId}` identifier of the 3D Container.
 
 The resources identified in  <<common-paths>> primarily support Discovery operations. Discovery operations allow clients to interrogate the API to determine its capabilities and obtain information (metadata) about a distribution of a resource. This includes the API definition of the server(s) as well as metadata about the resources provided by those servers.
 
-This standard extends the <<common-paths>> common query operations by defining simple, coordinate-based, queries which are applicable to many spatio-temporal, including geospatial, resource types. Other OGC API standards may define additional query capabilities specific to their resource type. EDR Query operations allow resources or values to be retrieved from the underlying spatio-temporal resource data store. The information returned is based upon the selection criteria (query string) provided by the client.
+This standard extends the common query operations listed in <<common-paths>> by defining simple, coordinate-based, queries which are applicable to many spatio-temporal, including geospatial, resource types. Other OGC API standards may define additional query capabilities specific to their resource type. EDR Query operations allow resources or values to be retrieved from the underlying spatio-temporal resource data store. The information returned is based upon the selection criteria (query string) provided by the client.

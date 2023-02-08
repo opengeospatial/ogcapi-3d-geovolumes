@@ -1,15 +1,14 @@
+
+[appendix,obligation=informative]
+[[annex-bibliography]]
 [bibliography]
-[[Bibliography]]
 == Bibliography
 
-////
-* [[[ogc08-131,1]]], Open Geospatial Consortium: The Specification Model -- A Standard for Modular specifications, https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131]
-
-* [[[SDWBP,2]]], W3C/OGC: Spatial Data on the Web Best Practices, W3C Working Group Note 28 September 2017, https://www.w3.org/TR/sdw-bp/
-
-* [[[DWBP,3]]], W3C: Data on the Web Best Practices, W3C Recommendation 31 January 2017, https://www.w3.org/TR/dwbp/
-
-* [[[DCAT,4]]], W3C: Data Catalog Vocabulary, W3C Recommendation 16 January 2014, https://www.w3.org/TR/vocab-dcat/
-
-* [[[link-relations,5]]], IANA: Link Relation Types, https://www.iana.org/assignments/link-relations/link-relations.xml
-////
+* [[[Cesium3DTilesNext,3D Tiles Next]]], Cesium: 3D Tiles Next (2022). https://github.com/CesiumGS/3d-tiles/tree/main/next
+* [[[OGC_19-010r2,OGC 19-010r2]]]  _OGC Testbed-15: Styles API Engineering Report_ http://www.opengis.net/doc/PER/t15-D012[_http://www.opengis.net/doc/PER/t15-D012_]
+* [[[OGC_19-041r3,OGC 19-041r3]]]  _OGC Routing Pilot Engineering Report_ http://www.opengis.net/doc/PER/routing-pilot-er[_http://www.opengis.net/doc/PER/routing-pilot-er_]
+* [[[OGC_,19-069OGC 19-069]]]  _OGC Testbed-15: Maps and Tiles API Engineering Report_ http://www.opengis.net/doc/PER/t15-D014[_http://www.opengis.net/doc/PER/t15-D014_]
+* [[[OGC_20-029,OGC 20-029]]]  _3D Data Container Engineering Report._ http://www.opengis.net/doc/PER/20-029[_http://www.opengis.net/doc/PER/20-029_]
+* [[[OGC_20-030,OGC 20-030]]]  _OGC® API – Tiles-3D (GeoVolumes) Engineering Report._ http://www.opengis.net/doc/PER/20-030[_http://www.opengis.net/doc/PER/20-030_]
+* [[[OGC_20-031,OGC 20-031]]]  _3D Data Container and Tiles API Pilot Summary Engineering Report_ https://www.opengis.net/doc/PER/20-031[_https://www.opengis.net/doc/PER/20-031_]
+* [[[OGC_17-046,OGC 17-046]]]  _OGC Testbed 13: 3D Tiles and I3S Interoperability and Performance Engineering Report_ http://www.opengis.net/doc/PER/t13-NG002[_http://www.opengis.net/doc/PER/t13-NG002_]
