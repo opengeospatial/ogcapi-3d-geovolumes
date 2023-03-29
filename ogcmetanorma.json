@@ -3,7 +3,7 @@
                 "OGC_doc_number": "22-029",
                 "urn":"http://www.opengis.net/doc/IS/ogcapi-geovolumes-1/1.0",
                 "title":"OGC API - 3D GeoVolumes",
-                "version":"1.0",
+                "version":"1.0.0",
                 "path":"standard/document.adoc"
         }
 }
