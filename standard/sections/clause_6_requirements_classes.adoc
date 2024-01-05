@@ -27,6 +27,7 @@ The 3D GeoVolumes APIsupports the resources and operations listed in Table 1 wit
 
 |===
 
+[[clause_requirements_class_core]]
 === Requirements Class "Core"
 
 All resources are available in a 'Core' requirements class, i.e. all GeoVolumes APIs will support them.
@@ -171,7 +172,7 @@ properties:
       type: string
 ----
 
-The following example of the conformance declaration of a 3D GeoVolumes API was taken from the "OGC API – Tiles - 3D (GeoVolumes) Engineering Report":
+The following example of the conformance declaration of a 3D GeoVolumes API was taken from the "OGC API – Tiles - 3D (GeoVolumes) Engineering Report" (https://docs.ogc.org/per/20-030.html[OGC 20-030]):
 
 [source%unnumbered,json]
 ----
@@ -488,7 +489,7 @@ image::../images/010.png[width=800]
 
 See Table B.4 in <<appendix_b>> for additional guidance.
 
-
+[[clause_requirements_class_extension]]
 === Requirements Class "Extension"
 
 This class provides specifics on the extensions to the Collections requirement class. The extensions to the Collections requirement class are as follows:

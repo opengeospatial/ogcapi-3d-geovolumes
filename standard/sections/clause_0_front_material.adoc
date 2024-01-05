@@ -53,7 +53,7 @@ The API described in this document is based on Open Geospatial Consortium (OGC) 
 
 An OGC API - 3D GeoVolumes specification is needed because a variety of solutions and standards exist to access and transfer 3D geospatial content (e.g. 3D Tiles, I3S, glTF and others). The OGC API - 3D GeoVolumes specification addresses this challenge by providing a resource model and corresponding API to integrate various approaches to accessing and transferring 2D / 3D geospatial content into a single, open standards-based solution. By outlining an implementation approach for the parameters of the API, the 3D GeoVolumes specification simplifies application development across geospatial enterprises by providing a single interface for requesting and receiving a variety of 2D / 3D datasets and their distribution. As such, the goal of this OGC API specification is not to replace existing distribution methods and models for 3D content, but to enable interoperability between them.
 
-The content provided within this document is derived largely from work done during collaborative, hands-on engineering conducted by members of the OGC during late 2019 and early 2020. As additional methodologies mature, this OGC API will be updated to include those approaches.
+The content provided within this document is derived largely from work done during collaborative, hands-on engineering conducted by members of the OGC during late 2019 and early 2020. As additional methodologies mature, OGC API - 3D GeoVolumes will be updated to include those approaches.
 
 
 [#common-paths,reftext='{table-caption} {counter:table-num}']
