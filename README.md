@@ -23,7 +23,7 @@ Retrieve the 3d-container for the specified id.
 ## Using the standard
 A draft of the **OGC API - 3D GeoVolumes** standard is available:
 
-* [HTML version](https://opengeospatial.github.io/ogcna-auto-review/22-029.html)
+* [HTML version](https://docs.ogc.org/DRAFTS/22-029.html)
 
 Those who want to try out the draft OpenAPI definition document, it can be found at:
 
