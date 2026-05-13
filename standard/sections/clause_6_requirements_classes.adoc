@@ -489,8 +489,8 @@ image::../images/010.png[width=800]
 
 See Table B.4 in <<appendix_b>> for additional guidance.
 
-[[clause_requirements_class_extension]]
-=== Requirements Class "Extension"
+[[clause_requirements_class_spatial_query_extension]]
+=== Requirements Class "Spatial Query Extension"
 
 This class provides specifics on the extensions to the Collections requirement class. The extensions to the Collections requirement class are as follows:
 
@@ -669,4 +669,90 @@ properties:
 
 ```
 part:: The id member of each spatial query SHALL be unique.
+====
+
+[[clause_requirements_class_2dtms_tiles]]
+=== Requirements Class "2D Tile Matrix Set Tiled 3D Data Access"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+inherit:: http://www.opengis.net/spec/ogcapi-tiles-1/1.0/req/tilesets-list
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/2dtms-tiles/tiles
+part:: The server SHALL support a HTTP GET operation at the path `/collections/{collectionId}/tiles` returning a list of available
+tilesets with 3D content conforming to the "TileSets List" requirements class of OGC API - Tiles.
+part:: The tiled data available at the template URL specified in those tilesets SHALL support either tiled point features
+within the tile referencing shared 3D models, a batch of all 3D models within the tile, or both options.
+====
+
+[[clause_requirements_class_tiles_referencing_models]]
+=== Requirements Class "Tiled points instantiating 3D models"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/point-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/points-tiles
+part:: The server SHALL support retrieving a representation of tiled point data for the tile retrieval.
+part:: Each point tile feature SHALL contain a non-zero 64-bit integer model identifier called `modelID`.
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/shared-models
+part:: The server SHALL support retrieving a 3D model for a given model id as an HTTP GET request to `/models/{modelID}`.
+====
+
+[[clause_requirements_class_batched_3d_models_tiles]]
+=== Requirements Class "Batched 3D Models Tiles"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/batched-3d-models-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/batched-3d-models-tiles
+part:: The server SHALL support retrieving a 3D mesh representation of all 3D models within a particular tile
+part:: The position of the models within the tiles SHALL be relative to the center of the 2D Tile Matrix Set tile at the
+ellipsoid's height.
+part:: The orientation of the models SHALL be relative to East, North, Up at the center of the 2D Tile Matrix Set tile
+at the ellipsoid's height.
+====
+
+[recommendation]
+====
+[%metadata]
+label:: /rec/points-tiles/models-separation
+part:: The batched 3D models tiles SHOULD preserve individual models as top-level nodes within the integrated batched 3D models
 ====
