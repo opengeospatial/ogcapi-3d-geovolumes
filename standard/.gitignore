@@ -1,0 +1,13 @@
+workdir
+standard/document*.doc
+standard/document*.err
+standard/document*.html
+standard/document*.pdf
+standard/document*.presentation.xml
+standard/document*.xml
+standard/document*.err.html
+standard/document*.asciidoc.log.txt
+standard/metanorma.asciidoc.log.txt
+standard/iev/
+standard/relaton/
+.DS_Store

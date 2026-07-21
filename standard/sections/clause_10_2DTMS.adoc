@@ -1,0 +1,24 @@
+[[clause_requirements_class_2dtms_tiles]]
+== Requirements Class "2D Tile Matrix Set Tiled 3D Data Access"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+inherit:: http://www.opengis.net/spec/ogcapi-tiles-1/1.0/req/tilesets-list
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/2dtms-tiles/tiles
+part:: The server SHALL support a HTTP GET operation at the path `/collections/{collectionId}/tiles` returning a list of available
+tilesets with 3D content conforming to the "TileSets List" requirements class of OGC API - Tiles.
+part:: The tiled data available at the template URL specified in those tilesets SHALL support either tiled point features
+within the tile referencing shared 3D models, a batch of all 3D models within the tile, or both options.
+====

@@ -42,7 +42,7 @@ Example 1: The server responds with only one GeoVolume from the container ID ("N
     {
       "rel": "items",
       "href": "http://example.org/collections/NewYork/NewYorkbuildings/3dTiles/",
-      "type": "application/json+3dtiles",
+      "type": "application/3dtiles+json",
       "title": "NYC - 3D Buildings Manhattan: 3D Tiles"
     }
   ],
@@ -58,7 +58,7 @@ Example 1: The server responds with only one GeoVolume from the container ID ("N
       "title": "NYC - 3D Buildings Manhattan: 3D Tiles",
       "rel": "original",
       "href": " http://example.org/NewYork/NewYork-buildings/3dTiles/[http://example.org/NewYork/NewYork-buildings/3dTiles/]",
-      "type": "application/json+3dtiles",
+      "type": "application/3dtiles+json",
       "collectionType": "3d-container"
     }
   ]

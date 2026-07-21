@@ -42,9 +42,21 @@ include::sections/clause_4_terms_and_definitions.adoc[]
 
 include::sections/clause_5_conventions.adoc[]
 
-include::sections/clause_6_requirements_classes.adoc[]
+include::sections/clause_6_overview.adoc[]
 
-include::sections/clause_7_media_types.adoc[]
+include::sections/clause_7_core.adoc[]
+
+include::sections/clause_8_3DTiles.adoc[]
+
+include::sections/clause_9_i3s.adoc[]
+
+include::sections/clause_10_2DTMS.adoc[]
+
+include::sections/clause_11_points.adoc[]
+
+include::sections/clause_12_batched_3Dmodels.adoc[]
+
+include::sections/clause_13_media_types.adoc[]
 
 ////
 add or remove annexes after "A" as necessary

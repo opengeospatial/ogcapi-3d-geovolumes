@@ -1,0 +1,30 @@
+[[clause_requirements_class_tiles_referencing_models]]
+== Requirements Class "Tiled points instantiating 3D models"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/point-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/points-tiles
+part:: The server SHALL support retrieving a representation of tiled point data for the tile retrieval.
+part:: Each point tile feature SHALL contain a non-zero 64-bit integer model identifier called `modelID`.
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/shared-models
+part:: The `linkTemplates` of the collection description SHALL include a template link with link relation `[ogc-rel:3dmodel]` and a URI template using the `{modelId}` variable
+e.g., `"linkTemplates" : [ { "type": "model/gltf-binary", "rel": "[ogc-rel:3dmodel]", "uriTemplate" : "/ogcapi/collections/buildings/models/{modelId}" } ]`.
+part:: The server SHALL support retrieving a 3D model for a given model id as an HTTP GET request using that link template, typically resolving to  to `/collections/{collectionId}/models/{modelID}`.
+====

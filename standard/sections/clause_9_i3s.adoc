@@ -1,0 +1,24 @@
+[[clause_requirements_class_i3s]]
+== Requirements Class "i3s"
+
+[[rc_i3s]]
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/i3s
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+inherit:: https://docs.ogc.org/cs/17-014r9/17-014r9.html
+====
+
+[[i3s_tilesets]]
+=== i3s Bounding Volume Hierarchies Tileset
+[requirement]
+====
+[%metadata]
+label:: /req/i3s/tileset
+part:: All collections supporting i3s access SHALL include a link using link relation `[ogc-rel:3d-geovolumes]` and media type `application/vnd.esri.i3s.json+gzip`
+to a valid gzipped i3s JSON tileset.
+part:: All tiled 3D data referenced by tileset SHALL be available.
+====

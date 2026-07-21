@@ -292,6 +292,6 @@ This defines the coordinate reference system of the coordinates in the temporal 
 Content type enumeration examples:
 
 * application/json
-* application/json+3dtiles
+* application/3dtiles+json
 * application/json+i3s
 * text/html

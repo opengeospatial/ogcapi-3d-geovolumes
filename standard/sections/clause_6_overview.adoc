@@ -1,0 +1,14 @@
+== Overview
+
+The OGC API - 3D GeoVolumes Standard provides efficient access to stream 3-dimensional data from an OGC API collection
+(as defined in https://docs.ogc.org/DRAFTS/20-024.html[OGC API - Common - Part 2: Geospatial Data]).
+
+An implementation needs to support at least one of the four different access mechanisms described in the 3D Tiles, i3s,
+Tiled Points Instantiating 3D Models and Batched 3D Models Tiles requirements classes.
+
+The Tiled Points Instantiating 3D Models and Batched 3D Models Tiles requirements classes both depend on a common
+2D Tile Matrix Set Tiled 3D Data Access requirements classes, which itself depends on the https://docs.ogc.org/is/20-057/20-057.html[OGC API - Tiles - Part 1: Core]
+and the https://docs.ogc.org/is/17-083r4/17-083r4.html[2D Tile Matrix Set and TileSet Metadata] Standards.
+
+It is also possible for the tilesets of the 3D Tiles requirements classes to reference the same batched 3D models being served as tiles (e.g., binary glTF `.glb` tiles)
+by the Batched 3D Models Tiles requirements class.

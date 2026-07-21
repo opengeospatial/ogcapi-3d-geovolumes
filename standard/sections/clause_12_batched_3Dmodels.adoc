@@ -1,0 +1,31 @@
+[[clause_requirements_class_batched_3d_models_tiles]]
+== Requirements Class "Batched 3D Models Tiles"
+
+This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
+georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/batched-3d-models-tiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+====
+
+[requirement]
+====
+[%metadata]
+label:: /req/points-tiles/batched-3d-models-tiles
+part:: The server SHALL support retrieving a 3D mesh representation of all 3D models within a particular tile
+part:: The position of the models within the tiles SHALL be relative to the center of the 2D Tile Matrix Set tile at the
+ellipsoid's height.
+part:: The orientation of the models SHALL be relative to East, North, Up at the center of the 2D Tile Matrix Set tile
+at the ellipsoid's height.
+====
+
+[recommendation]
+====
+[%metadata]
+label:: /rec/points-tiles/models-separation
+part:: The batched 3D models tiles SHOULD preserve individual models as top-level nodes within the integrated batched 3D models
+====

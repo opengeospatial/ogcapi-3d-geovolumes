@@ -1,0 +1,24 @@
+[[clause_requirements_class_3DTiles]]
+== Requirements Class "3D Tiles"
+
+[[rc_3dtiles]]
+
+[requirements_class]
+====
+[%metadata]
+label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/3dtiles
+subject:: Web API
+inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+inherit:: https://docs.ogc.org/cs/22-025r4/22-025r4.html
+====
+
+[[tiles3D_tilesets]]
+=== 3D Tiles Bounding Volume Hierarchies Tileset
+[requirement]
+====
+[%metadata]
+label:: /req/3dtiles/tileset
+part:: All collections supporting 3D Tiles access SHALL include a link using link relation `[ogc-rel:3d-geovolumes]` and media type `application/3dtiles+json` to a valid
+3D Tiles JSON tileset.
+part:: All tiled 3D data referenced by tileset SHALL be available.
+====
