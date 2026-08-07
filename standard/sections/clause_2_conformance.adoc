@@ -1,3 +1,4 @@
+[[conformance-section]]
 == Conformance
 
 Conformance with this API shall be checked using the tests specified in Annex A of this document. The framework, concepts, and methodology for testing, and the criteria to claim conformance are specified in the  https://portal.ogc.org/files/?artifact_id=55234[OGC Compliance Testing Policies and Procedures] and the  https://www.ogc.org/compliance[OGC Compliance Testing] web site.

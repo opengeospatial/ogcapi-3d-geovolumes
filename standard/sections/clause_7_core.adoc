@@ -4,7 +4,7 @@
 The "Core" requirements class of OGC API - 3D GeoVolumes specifies that a collection of 3D geospatial data is accessible
 from an OGC API collection (as defined in https://docs.ogc.org/DRAFTS/20-024.html[OGC API - Common - Part 2: Geospatial Data])
 using one or more access mechanisms defined in the additional requirements classes of this standard.
-Additionally, implementations are recommended to conform the https://www.opengis.net/spec/ogcapi-common-1/1.0/req/landing-page[Landing Page requirements class] of
+Additionally, implementations are recommended to conform to the https://www.opengis.net/spec/ogcapi-common-1/1.0/req/landing-page[Landing Page requirements class] of
 https://docs.ogc.org/is/19-072/19-072.html[OGC API - Common - Part 1: Core], defining a mechanism to share the list of supported conformance classes as well
 as requiring the provision of an API definition.
 
@@ -66,6 +66,7 @@ The conformance resource requires no parameters. The HTTP `/conformance` GET res
 [%metadata]
 label:: /req/core/conformance
 part:: If the API instance has a mechanism to advertise conformance classes, the list of conformance classes SHALL include the ones defined in this Standard and listed in
+<<conformance-section>> that are supported by this API implementation instance.
 part:: If some conformance classes of this Standard are only supported by particular collections, requirements classes supported by these collections SHALL be listed in a
 resource linked to from the collection description as described in the
 https://docs.ogc.org/DRAFTS/20-024.html#per_collections_conformance[OGC API - Common - Part 2 per-collection conformance permission].
