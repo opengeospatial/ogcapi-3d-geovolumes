@@ -4,12 +4,15 @@
 This requirements class provides a data access mechanism based on OGC API - Tiles and OGC 2D Tile Matrix Sets, where the
 georeferencing of the content is implied from the tile identifier i.e., the tile matrix (level), row, and column.
 
+[[rc_batched3dmodels]]
+
+.Batched 3D Models Tiles
 [requirements_class]
 ====
 [%metadata]
-label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/batched-3d-models-tiles
+identifier:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/batched-3d-models-tiles
 subject:: Web API
-inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
+inherit:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/2dtms-tiles
 ====
 
 [requirement]

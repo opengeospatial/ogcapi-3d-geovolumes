@@ -10,10 +10,11 @@ as requiring the provision of an API definition.
 
 [[rc_core]]
 
+.Core
 [requirements_class]
 ====
 [%metadata]
-label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+identifier:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
 subject:: Web API
 inherit:: https://www.opengis.net/spec/ogcapi-common-1/1.0/req/core
 inherit:: https://www.opengis.net/spec/ogcapi-common-2/1.0/req/collections
@@ -90,12 +91,12 @@ The following example of the conformance declaration of a 3D GeoVolumes API inst
     "http://www.opengis.net/spec/ogcapi-tiles-1/1.0/conf/geodata-tilesets"
     "http://www.opengis.net/spec/ogcapi-tiles-1/1.0/conf/tilesets-list",
     "http://www.opengis.net/spec/ogcapi-tiles-1/1.0/conf/geojson",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/core",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/3d-tiles",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/i3s",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/2dtms-tiles",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/point-tiles",
-    "http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/batched-3d-models-tiles"
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/core",
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/3d-tiles",
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/i3s",
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/2dtms-tiles",
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/point-tiles",
+    "https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/batched-3d-models-tiles"
   ]
 }
 ----

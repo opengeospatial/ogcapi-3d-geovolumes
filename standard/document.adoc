@@ -2,7 +2,7 @@
 :doctype: standard
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: swg-draft
 :committee: technical
 :draft: 0.0
 :external-id: http://www.opengis.net/doc/IS/ogcapi-geovolumes-1/1.0
@@ -13,7 +13,7 @@
 :fullname: Jeff Harrison
 :fullname_2: Ignacio Correas
 :fullname_3: Jerome Jacovella-St-Louis
-:docsubtype: Interface
+:docsubtype: implementation
 :keywords: ogcdoc, OGC document,OGC API, 3D Tiles , I3S, geographic information, Geospatial API, GeoVolume, GeoVolumes, 3D, feature, geographic information, dataset, distribution, API, OpenAPI, HTML, glTF, bounding volume hierarchy
 :submitting-organizations: US Army Geospatial Center (AGC); Skymantics, LLC; Ecere Corporation; Cesium; Cognitics; Helyx SIS; Strategic Alliance Consulting Inc.; Steinbeis
 :imagesdir: images
@@ -56,7 +56,7 @@ include::sections/clause_11_points.adoc[]
 
 include::sections/clause_12_batched_3Dmodels.adoc[]
 
-include::sections/clause_13_media_types.adoc[]
+// include::sections/clause_13_media_types.adoc[]
 
 ////
 add or remove annexes after "A" as necessary
@@ -64,13 +64,13 @@ add or remove annexes after "A" as necessary
 
 include::sections/annex_a.adoc[]
 
-include::sections/annex_b.adoc[]
+// include::sections/annex_b.adoc[]
 
-include::sections/annex_c.adoc[]
+// include::sections/annex_c.adoc[]
 
 include::sections/annex_d.adoc[]
 
-include::sections/annex_e.adoc[]
+// include::sections/annex_e.adoc[]
 
 //include::sections/annex_glossary.adoc[]
 

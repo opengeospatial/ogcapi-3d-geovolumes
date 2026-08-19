@@ -3,12 +3,13 @@
 
 [[rc_3dtiles]]
 
+.3D Tiles
 [requirements_class]
 ====
 [%metadata]
-label:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/3dtiles
+identifier:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/3dtiles
 subject:: Web API
-inherit:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
+inherit:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
 inherit:: https://docs.ogc.org/cs/22-025r4/22-025r4.html
 ====
 

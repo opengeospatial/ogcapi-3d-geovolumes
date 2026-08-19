@@ -4,7 +4,8 @@
 
 === Introduction
 
-The Abstract Test Suite (ATS) provides a basis for developing an Executable Test Suite to verify that the implementation under test conforms to all the requirements specified in the requirements class associated with a conformance class.
+The Abstract Test Suite (ATS) provides a basis for developing an Executable Test Suite to verify that the implementation under test conforms to all the requirements specified in
+the requirements class associated with a conformance class.
 
 :!numbered:
 === Conformance Class Core

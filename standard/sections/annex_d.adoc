@@ -2,7 +2,7 @@
 [[appendix_d]]
 [[annex_d]]
 :numbered:
-== Annex D: Example Responses (Informative)
+== Annex B: Example Responses (Informative)
 :!numbered:
 This section provides examples of how servers may respond to requests issued by using the GeoVolumes API.
 

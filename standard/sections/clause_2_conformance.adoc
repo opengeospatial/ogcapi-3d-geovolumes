@@ -1,33 +1,69 @@
 [[conformance-section]]
 == Conformance
 
-Conformance with this API shall be checked using the tests specified in Annex A of this document. The framework, concepts, and methodology for testing, and the criteria to claim conformance are specified in the  https://portal.ogc.org/files/?artifact_id=55234[OGC Compliance Testing Policies and Procedures] and the  https://www.ogc.org/compliance[OGC Compliance Testing] web site.
+Conformance with this API shall be checked using the tests specified in Annex A of this document.
+The framework, concepts, and methodology for testing, and the criteria to claim conformance are specified in the
+http://www.opengis.net/doc/pol/compliance/1.1[OGC Compliance Testing Policies and Procedures] and the https://www.ogc.org/compliance[OGC Compliance Testing] web site.
 
-The one Standardization Target for this standard is  https://docs.ogc.org/is/19-086r4/19-086r4.html#webapi-definition[Web APIs].
+The one Standardization Target for this standard is https://docs.ogc.org/is/19-072/19-072.html#webapi-definition[Web APIs].
 
-https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core] defines an API module intended for re-use by other OGC Web API standards. The OGC API - 3D GeoVolumes is an extension of  https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API - Common - Part 1: Core]. Conformance to the OGC API - 3D GeoVolumes candidate Standard requires demonstrated conformance to the applicable Conformance Classes of OGC API - Common.
+The _OGC API - Common_ Standard provides a common foundation for other OGC API standards.
+Some conformance classes of this OGC API - Coverages Standard have a dependency on, or are designed to be easily integrated with, conformance classes defined in
+_OGC API - Common_ https://docs.ogc.org/is/19-072/19-072.html[_Part 1_] and/or https://docs.ogc.org/DRAFTS/20-024.html[_Part 2_],
+as well as within a Web API conforming to additional OGC API Standards.
 
-OGC API - 3D GeoVolumes identifies a set of Conformance Classes. The  https://docs.ogc.org/is/19-086r4/19-086r4.html#ctc-definition[Conformance Classes] implemented by an API are advertised through the `/conformance` path on the landing page.
+OGC API - 3D GeoVolumes identifies a set of Conformance Classes. The https://docs.ogc.org/is/19-072/19-072.html#ctc-definition[Conformance Classes] implemented by an
+API are advertised through the `/conformance` path on the landing page.
 
+Each Conformance Class corresponds to one or more https://docs.ogc.org/is/19-072/19-072.html#requirements-class-definition[Requirements Classes].
 
-Each Conformance Class is defined by one or more  https://docs.ogc.org/is/19-086r4/19-086r4.html#requirements-class-definition[Requirements Classes] defined in Section 6. The requirements in Section 6 are organized by Requirements Class.
+Only the Core requirements class is mandatory, all other requirement classes are optional.
 
+=== Requirements classes
 
-=== Mandatory Requirements Classes
+The Requirements Classes for _OGC API - 3D GeoVolumes_ are:
 
-The mandatory requirements class of OGC API - 3D GeoVolumes is the Requirements Class "Core" specified in <<clause_requirements_class_core>>.
+* <<rc_core,*Core*>>
+* <<rc_3dtiles,*3D Tiles*>>
+* <<rc_i3s,*i3s*>>
+* <<rc_2dtms,*2D Tile Matrix Set Tiled 3D Data Access*>>
+* <<rc_batched3dmodels,*Batched 3D Models Tiles*>>
+* <<rc_ref3dmodels,*Tiled points instantiating 3D models*>>
 
-This requirements class inherits from the _Core Requirements Class_ of  https://docs.ogc.org/is/19-086r4/19-086r4.html#OGC19-072[OGC API — Common — Part 1: Core] which specifies the minimal useful service interface for an OGC API.
-
-The requirements specified in the Requirements Class "Core" of OGC API – 3D GeoVolumes focus on minimal capabilities for a static web server.
-
-
+The _Core_ Requirements Class is the minimal useful service interface for an implementation of OGC API - 3D GeoVolumes Standard.
 The requirements specified in the Requirements Class "Core" of OGC API – 3D GeoVolumes are mandatory for all implementations of the 3D GeoVolumes API.
+The _Core_ Requirements Class depends on the https://docs.ogc.org/DRAFTS/20-024.html#rc-collections-section["Collections" requirements class] of
+OGC API - Common - Part 2: Geospatial Data, while also specifying support for accessing 3D data.
 
-=== Optional Requirements Classes
+The additional requirements classes define specific access mechanisms for 3D data.
 
-The optional requirements classes of OGC API - 3D GeoVolumes include Requirements Class "Extension" specified in <<clause_requirements_class_extension>>.
+The <<clause_requirements_class_3DTiles,3D Tiles requirements class>> specifies support for access to data using the
+https://docs.ogc.org/cs/22-025r4/22-025r4.html[OGC 3D Tiles Community Standard].
 
-The requirements specified in the Requirements Class "Extension" adds the option for a spatial query parameter or tile coordinates to limit the result.
+The <<clause_requirements_class_i3s,i3s requirements class>> specifies support for access to data using the
+https://docs.ogc.org/cs/17-014r9/17-014r9.html[OGC i3s Community Standard].
 
-The requirements specified in the Requirements Class "Extension" are optional for implementations of the 3D GeoVolumes API.
+The <<clause_requirements_class_2dtms_tiles,2D Tile Matrix Set Tiled 3D Data Access (2DTMS T3DA)>> specifies support for access to data using the
+https://docs.ogc.org/is/17-083r4/17-083r4.html[OGC 2D Tile Matrix Set and Tileset Metadata] and
+https://docs.ogc.org/is/20-057/20-057.html[OGC API - Tiles - Part 1: Core] Standards.
+
+The <<clause_requirements_class_batched_3d_models_tiles,Batched 3D Models Tiles>> depends on the <<clause_requirements_class_2dtms_tiles,2DTMS T3DA requirements class>>, defining individual tiles as 3D models
+(such as glTF) batching all 3D models within the spatial extent of the tiles.
+
+The <<clause_requirements_class_tiles_referencing_models,Tiled points instantiating 3D models>> also depends on the <<clause_requirements_class_2dtms_tiles,2DTMS T3DA requirements class>>, defining individual tiles
+as tiled points features data ("vector tiles") which reference (instantiate) 3D models from a dedicated endpoint for shared 3D model resources.
+
+=== Summary of conformance URIs
+
+[#table_conformance_urls,reftext='{table-caption} {counter:table-num}']
+.Conformance class URIs
+[cols="30,70",options="header"]
+|===
+| Corresponding requirements class                        | Conformance class URI
+| <<rc_core,Core>>                                        | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/core
+| <<rc_3dtiles,3D Tiles>>                                 | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/3d-tiles
+| <<rc_i3s,i3s>>                                          | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/i3s
+| <<rc_2dtms,2D Tile Matrix Set Tiled 3D Data Access>>    | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/2dtms-tiles
+| <<rc_batched3dmodels,Batched 3D Models Tiles>>          | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/batched-3d-models-tiles
+| <<rc_ref3dmodels,Tiled points instantiating 3D models>> | https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/point-tiles
+|===

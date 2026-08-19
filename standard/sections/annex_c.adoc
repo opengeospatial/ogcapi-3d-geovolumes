@@ -211,34 +211,6 @@ Link to content.
 |===
 
 
-=== Link Relation Type (Rel)
-
-This defines the relationship between the current JSON resource representation and a related JSON resource. For more information see:
-
-* Link Relations [http://docs.opengeospatial.org/is/17-069r3/17-069r3.html%23_link_relations[http://docs.opengeospatial.org/is/17-069r3/17-069r3.html#_link_relations]]
-* IANA: Link Relation Types [https://www.iana.org/assignments/link-relations/link-relations.xml[https://www.iana.org/assignments/link-relations/link-relations.xml]]
-
-
-The following enumeration is provided as an example. Other relationship types are possible.
-
-* affinemap: Link from a 3D-Container with 2D content to a 3D-Container with 2.5D content (surface, point cloud) to which the 2D content should be texture-mapped.
-* alternate: Refers to a substitute for this context.
-* collections: The target points to a 3D-container resource which represents the collection resource for the context.
-* conformance: Refers to a resource that identifies the specifications that the link's context conforms to.
-* data: Indicates that the link's context is a distribution of a dataset that is an API and refers to the root resource of the dataset in the API.
-* dataset: Indicates that the link's context is a distribution of a dataset that is an API and refers to the root resource of the dataset in the API.
-* describedby: Refers to a resource providing information about the link's context.
-* distribution: Indicates that the link's context is a distribution.
-* item: The target IRI points to a resource that is a member of the collection represented by the context IRI.
-* items: Refers to a resource that is comprised of members of the collection represented by the link's context.
-* original: The distribution representing the most original version of the dataset, e.g. a CityGML model.
-* parent: link to enclosing 3D-Container.
-* root: link to top-level 3D-Container.
-* scheme: link to the definition of any implicit tile scheme which sets the 3D-Container organization, extent and/or addressing.
-* self: Conveys an identifier for the link's context.
-* service: Indicates a URI that can be used to retrieve a service document.
-* service-desc: Identifies service description for the context that is primarily intended for consumption by machines.
-
 
 === Spatial Extent
 
@@ -286,12 +258,3 @@ This defines the coordinate reference system of the coordinates in the temporal 
 
 • http://www.opengis.net/def/uom/ISO-8601/0/Gregorian[http://www.opengis.net/def/uom/ISO-8601/0/Gregorian]
 
-
-=== Content Type
-
-Content type enumeration examples:
-
-* application/json
-* application/3dtiles+json
-* application/json+i3s
-* text/html

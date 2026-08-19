@@ -43,7 +43,7 @@ a computer with an HTTP server containing hosted files that are sent 'as-is' to 
 
 API using an architectural style that is founded on the technologies of the Web. [derived from the W3C Data on the Web Best Practices]
 
-== Acronyms
+=== Abbreviated terms
 
 The acronyms relevant to this document are specified in the following list.
 

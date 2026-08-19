@@ -1,8 +1,10 @@
 [[ats_core]]
+
+.Core
 [conformance_class]
 ====
 [%metadata]
-label:: http://www.opengis.net/spec/ogcapi-3dgeovolumes-1/1.0/conf/core
-subject:: <<rc_core,Requirements Class "Core">>
+identifier:: http://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/conf/core
+target:: https://www.opengis.net/spec/ogcapi-geovolumes-1/1.0/req/core
 classification:: Target Type:Web API
 ====
