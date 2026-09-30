@@ -19,7 +19,7 @@ inherit:: https://docs.ogc.org/cs/17-014r9/17-014r9.html
 ====
 [%metadata]
 label:: /req/i3s/tileset
-part:: All collections supporting i3s access SHALL include a link using link relation `[ogc-rel:3d-geovolumes]` and media type `application/vnd.esri.i3s.json+gzip`
-to a valid gzipped i3s JSON tileset.
+part:: All collections supporting i3s access SHALL include a link to a valid i3s JSON tileset using link relation `[ogc-rel:3d-geovolumes]` and media type
+`application/vnd.esri.i3s.json+gzip` if gzip'ed, or `application/vnd.esri.i3s.json` otherwise.
 part:: All tiled 3D data referenced by tileset SHALL be available.
 ====

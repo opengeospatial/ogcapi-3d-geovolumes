@@ -19,7 +19,7 @@ inherit:: https://docs.ogc.org/cs/22-025r4/22-025r4.html
 ====
 [%metadata]
 label:: /req/3dtiles/tileset
-part:: All collections supporting 3D Tiles access SHALL include a link using link relation `[ogc-rel:3d-geovolumes]` and media type `application/3dtiles+json` to a valid
-3D Tiles JSON tileset.
+part:: All collections supporting 3D Tiles access SHALL include a link to a valid 3D Tiles tileset using link relation `[ogc-rel:3d-geovolumes]` and media type
+`application/json` for 3D Tiles 1.0 or 1.1, `model/gltf+json` or `model/gltf-binary` for 3D Tiles 2.0+.
 part:: All tiled 3D data referenced by tileset SHALL be available.
 ====
