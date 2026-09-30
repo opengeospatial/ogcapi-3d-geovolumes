@@ -6,66 +6,47 @@
 :!numbered:
 This section provides examples of how servers may respond to requests issued by using the GeoVolumes API.
 
-Example 1: The server responds with only one GeoVolume from the container ID ("NewYork/NewYork-buildings"). The container can contain multiple 3D Containers, with multiple formats, and with a flat or hierarchical organization.
+Example 1: The server responds with only one GeoVolume from the collection ID ("NewYork:buildings").
+The Web API deployment can serve multiple 3D data collections, with multiple formats, potentially leveraging the
+https://docs.ogc.org/DRAFTS/25-046.html#rc-hierarchical-collections-section[hierarchical collections] capability
+defined in OGC API - Common - Part 4: Discovery within many collections.
 
 [source%unnumbered,json]
 ----
 {
-"id": "NewYork/NewYork-buildings",
-"title": "NYC - 3D Buildings Manhattan",
-"description": "3D Buildings in Manhattan, New York.",
-"collectionType": "3d-container",
-"extent": {
-  "spatial": [
-    -74.01900887327089,
-    40.700475291581974,
-    -11.892070104139751,
-    -73.9068954348699,
-    40.880256294183646,
-    547.7591871983744
-  ],
-  "crs": " http://www.opengis.net/def/crs/OGC/0/CRS84h[http://www.opengis.net/def/crs/OGC/0/CRS84h]"
+  "id": "NewYork:buildings",
+  "title": "NYC - 3D Buildings Manhattan",
+  "description": "3D Buildings in Manhattan, New York",
+  "extent": {
+    "spatial": {
+      "bbox": [ [ -74.01900887327089, 40.700475291581974, -11.892070104139751, -73.9068954348699, 40.880256294183646, 547.7591871983744 ] ],
+      "crs": "http://www.opengis.net/def/crs/OGC/0/CRS84h"
+    }
   },
   "links": [
     {
       "rel": "self",
-      "href": " http://example.org/collections/NewYork/NewYork-buildings/[http://example.org/collections/NewYork/NewYork-buildings/]",
+      "href": "http://example.org/collections/NewYork:buildings",
       "type": "application/json",
       "title": "NYC - 3D Buildings Manhattan"
     },
     {
-      "rel": "items",
-      "href": "http://example.org/collections/NewYork/NewYork-buildings/i3s/",
-      "type": "application/json+i3s",
+      "rel": "[ogc-rel:3d-geovolumes]",
+      "href": "http://example.org/collections/NewYork:buildings/i3s",
+      "type": "application/vnd.esri.i3s.json+gzip",
       "title": "NYC - 3D Buildings Manhattan: i3s"
     },
     {
-      "rel": "items",
-      "href": "http://example.org/collections/NewYork/NewYorkbuildings/3dTiles/",
-      "type": "application/3dtiles+json",
+      "rel": "[ogc-rel:3d-geovolumes]",
+      "href": "http://example.org/collections/NewYork:buildings/3dTiles",
+      "type": "application/json",
       "title": "NYC - 3D Buildings Manhattan: 3D Tiles"
-    }
-  ],
-  "content": [
-    {
-      "title": "NYC - 3D Buildings Manhattan: i3s",
-      "rel": "original",
-      "href": "http://example.org/collections/NewYork/NewYork-buildings/i3s/",
-      "type": "application/json+i3s",
-      "collectionType": "3d-container"
-    },
-    {
-      "title": "NYC - 3D Buildings Manhattan: 3D Tiles",
-      "rel": "original",
-      "href": " http://example.org/NewYork/NewYork-buildings/3dTiles/[http://example.org/NewYork/NewYork-buildings/3dTiles/]",
-      "type": "application/3dtiles+json",
-      "collectionType": "3d-container"
     }
   ]
 }
 ----
 
-Example 2: The client parses the 3D Container for 3D Tiles link. Client 3D Tiles/tileset. Response. The server response with tileset.json.
+Example 2: The client requests the tileset for the 3D Tiles link, and the server responds with the root 3D Tiles tileset:
 
 [source%unnumbered,json]
 ----

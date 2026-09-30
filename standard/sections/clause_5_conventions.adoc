@@ -19,26 +19,30 @@ This defines the relationship between the current JSON resource representation a
 * Link Relations [http://docs.opengeospatial.org/is/17-069r3/17-069r3.html%23_link_relations[http://docs.opengeospatial.org/is/17-069r3/17-069r3.html#_link_relations]]
 * IANA: Link Relation Types [https://www.iana.org/assignments/link-relations/link-relations.xml[https://www.iana.org/assignments/link-relations/link-relations.xml]]
 
+The following IANA link relation types are used in this document:
 
-The following enumeration is provided as an example. Other relationship types are possible.
+* `alternate`: Refers to a substitute for this context.
+* `self`: Conveys an identifier for the link's context.
+* `service-doc`: Identifies service documentation for the context that is primarily intended for human consumption.
+* `service-desc`: Identifies service description for the context that is primarily intended for consumption by machines.
 
-* affinemap: Link from a 3D-Container with 2D content to a 3D-Container with 2.5D content (surface, point cloud) to which the 2D content should be texture-mapped.
-* alternate: Refers to a substitute for this context.
-* collections: The target points to a 3D-container resource which represents the collection resource for the context.
-* conformance: Refers to a resource that identifies the specifications that the link's context conforms to.
-* data: Indicates that the link's context is a distribution of a dataset that is an API and refers to the root resource of the dataset in the API.
-* dataset: Indicates that the link's context is a distribution of a dataset that is an API and refers to the root resource of the dataset in the API.
-* describedby: Refers to a resource providing information about the link's context.
-* distribution: Indicates that the link's context is a distribution.
-* item: The target IRI points to a resource that is a member of the collection represented by the context IRI.
-* items: Refers to a resource that is comprised of members of the collection represented by the link's context.
-* original: The distribution representing the most original version of the dataset, e.g. a CityGML model.
-* parent: link to enclosing 3D-Container.
-* root: link to top-level 3D-Container.
-* scheme: link to the definition of any implicit tile scheme which sets the 3D-Container organization, extent and/or addressing.
-* self: Conveys an identifier for the link's context.
-* service: Indicates a URI that can be used to retrieve a service document.
-* service-desc: Identifies service description for the context that is primarily intended for consumption by machines.
+The following link relation types which were previously defined for other OGC API standards are applicable:
+
+* `conformance`: Refers to a resource that identifies the specifications that the link's context conforms to.
+* `data`: Indicates that the link's context is a distribution of a dataset that is an API and refers to the root resource of the dataset in the API.
+* `parent`: Indicates that the link’s context is part of a hierarchy, and that the parent resource in the hierarchy is the link target.
+* https://www.opengis.net/def/rel/ogc/1.0/dataset: The target IRI points to a resource representing the dataset (e.g., the root of an OGC Web API).
+* https://www.opengis.net/def/rel/ogc/1.0/geodata: The target IRI points to a resource representing a collection of geospatial data.
+* https://www.opengis.net/def/rel/ogc/1.0/children: Indicates that the link target is the list of children resources.
+* https://www.opengis.net/def/rel/ogc/1.0/tilesets-vector: The target IRI points to a resource that describes how to access tile sets of the context resource in vector format.
+
+In addition, the following link relation types are used for which no applicable registered link relation type could be identified:
+
+* https://www.opengis.net/def/rel/ogc/1.0/3d-geovolumes: The target IRI points to a resource representing a tileset of 3D data organized as a bounding volume hierarchy (such as i3s or 3D Tiles).
+* https://www.opengis.net/def/rel/ogc/1.0/tilesets-3dmodels: The target IRI points to a resource that describes how to access tile sets of the context resource as 3D models.
+* https://www.opengis.net/def/rel/ogc/1.0/3dmodel: The target IRI points to a 3D model resource.
+
+Other relationship types are possible.
 
 === Media Types
 
